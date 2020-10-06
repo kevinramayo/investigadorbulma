@@ -1,0 +1,17 @@
+{
+  "name": "kevin.sistemabulma",
+  "version": "1.0.0",
+  "description": "mi negocio web con bulma",
+  "main": "javascript.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "kevin gabriel ramayo lara <ramashoalv@gmail.com>",
+  "license": "ISC",
+  "dependencies": {
+    "bulma": "^0.9.1",
+    "font-awesome": "^4.7.0",
+    "jquery": "^3.5.1",
+    "jquery-mobile": "^1.5.0-alpha.1"
+  }
+}

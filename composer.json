@@ -1,0 +1,12 @@
+{
+    "name": "kevin/sistemabulma",
+    "description": "sistema con bulma",
+    "type": "project",
+    "authors": [
+        {
+            "name": "kevin ramayo",
+            "email": "ramashoalv@gmail.com"
+        }
+    ],
+    "require": {}
+}
