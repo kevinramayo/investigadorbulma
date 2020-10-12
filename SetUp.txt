@@ -1,0 +1,58 @@
+
+contenido: |Instalar pagina web|Abrir pagina web|Instalar base de datos|Crear usuario y contraseña|Modificar Functions.php|Crear tablas de la base de datos|
+
+A continuacion les proporcionare los pasos a seguir para poder instalar la pagina web con su respectiva base de datos;
+
+Ya deberan tener descargado el acrivo comprimido de la pagina
+
+1. deberan mover este archivo a la app que usaremos de localhost en este caso xampp
+2. Deberan dirijirse a la siguiente ruta primero "Este equipo" en el explorador de archivos de su pc, luego ir al disco local donde se instalan sus programas por defecto (C,D,E)
+buscaran la carpeta llamada "xampp", dentro de esta entraremos en la llamada "htdocs" dentro de esta en donde pondremos el archivo comprimido.
+3.Descomprimiremos el archivo dentro de "htdocs" y nos dejara una carpeta con la pagina web (ya podremos eliminar el archivo comprimido)
+INPORTANTE: desntro de htdocs encontraremos un archivo llamado index.php a este le debemos cambiar el nombre (puede ser cualquier nombre) para poder ingresar al explorador desde localhost
+
+YA TENEMOS LA PAGINA INSTALADA AHORA VEREMOS COMO ABRIRLA.
+
+1.iniciaremos nuestra aplicacion que nos brinda un servidor local ("este caso deberia ser xampp")
+2.iniciaremos el apache dando clic en "start" e igualmente con el MySQL
+3.ahora en nuestro navegador preferido teclearemos la palabra "localhost", se nos abrira el explorador de archivos con las carpetas que tenemos en el htdocs
+4. daremos clic a nuestra carpeta que acabamos de instalar su nombre deberia ser "Pag-InvestigadorPrivadoCV"
+
+LISTO DEBERIA MANDARNOS DIRECTO A LA PAGINA WEB Y YA PODREMOS NAVEGAR POR LA MISMA
+
+AHORA VEREMOS COMO INSTALAR LA BASE DE DATOS DE LA RESPETIVA PAGINA WEB
+
+hay dos formas de instalar la base de datos pero les mostrare como hacerlo desde el navegador web
+1.en nuestro navegador pegaremos el siguiente texto; http://localhost/phpmyadmin/ esto nos mandara a la pagina donde se almacenan las bases de datos
+2.del lado izquierdo veremos un listado con las bases de datos existentes allí veremos una que dice nueva hasta arriba daremos clic en esa
+3.dentro se mostrara nuevamanete un listado en arriba de este nos dara un espacio para poner el nombre de la base de datos
+allí pondremos el nombre de "investigadorprivado" y en la seleccion de alado utf8mb4_general_ci y le damos a "crear"
+
+LISTO TENDREMOS NUESTRA BASE DE DATOS CREADA AHORA VEREMOS COMO CREAR UN USUARIO Y CONTRASEÑA QUE SE NECECITAN PARA PODER ACCEDER A LA BASE DE DATOS DE LA PAGINA QUE TIENE ASIGNADA NUESTRA APLICACION WEB EN FUNCTIONS.PHP
+
+1.entraremos a nuestra base de datos haciendo clic en la parte izquierda
+2.dentro en la parte superior veremos una barra con diferentes opciones allí entraremos en la que dice "privilegios"
+3.luego dentro se mostraran los usuarios exitentes para dicha base de datos pero veremos que en la parte de abajo dice "agregar cuenta de usuario" daremos clic allí
+4.ahora bien se nos pedira un nombre, contraseña y otras cosas para el usuario PRIMERO el nombre del usuario debe ser "administrador" 
+5.en nombre de host seleccionaremos "local" y se pondra en automatico localhost
+6.En contraseña pondremos "12cd45as6xd" y la volveremos a escribir en la parte de abajo
+7.aun mas abajo veremos 3 opciones, escojeremos "otorgar todos los privilegios para la base de datos nombredelabasededatos
+8.abajo de eso dira algo de privilegios globales daremos seleccionaremos la opcion que tiene a la derecha "seleccionar todo" y automaticamente se seleccionaran todos los privilegios posibles
+9. por ultimo al final de la pagina dice "Continuar" presionaremos el boton y listo el usuario debera haberse creado.
+
+AHORA EN CASE DE CAMBIAR LA BASE DE DATOS QUE SE USA EN LA PAGINA ABRIREMOS EN ARCHIVO FUNCTIONS.PHP QUE SE ENCUENTRA DENTRO DE LA CARPETA SISTEMA QUE A SU VES ESTA DENTRO DE LA CARPETA DE LA PAGINA WEB
+
+1.dentro del archivo y podiendolo editar en $dbhost podremos cambiar para elegir en que servidor se almacenara la pagina pero en este caso tiene localhost porque el servidor es propio asi que lo dejaremos como esta si asi lo desea
+2.en $dbname podremos elegir el nombre de la base de datos que ya tengamos creada para poder acceder desde la pagina y donde se guardara la info de los formularios allí dejaremos el nombre de investigadorprivado si queremos o cambiarlo por otra que ya tengamos
+3.en $dbuser este sera el nombre del usuario con el que se ingresa a la base de datos como ya creamos anteriormente un usuario le debe tener el mismo nombre pero si queremos podemos poner por algun usuario que ya tengamos creado IMPORTANTE: si cambiamos el usuario este debera tener todos los privilegios para la base de datos que tengo el mismo archivo de lo contrario no podremos ingresar a la pagina web así que asegurate de que tengas el usuario correcto creado en la base de datos correcta
+4.en $dbpass sera la contraseña del usuario lo dejaremos como esta si usamos el usuario que creamos anteriormente sino pondremos la contraseña del usuario que hayamos elegido en caso de no tener contraseña lo dejaremos en blanco y sin espacios solamente "".
+
+YA DEBERIA ESTAR LISTO AHORA SOLO FALTA ENTRAR A LA PAGINA Y COMPROBAR QUE HAYAMOS ESCRITO CORRECTAMENTE EL NOMBRE DE LA BASE DE DATOS, EL USUARIO Y CONTRASEÑA
+DE SER ASÍ SOLO QUEDA CREAR LAS TABLAS DE LA BASE DE DATOS.
+
+1. debemos escribir la siguiente sintaxis en el navegador localhost/PagInvestigadorPrivadoCV(o el nombre donde se encuentra la pagina web)/sistema/setup.php y esto debera mandar una pantalla donde debera decir que las tablas han sido creadas con exito y eso significara que ya se habran creado y ya podremos empezar a usar la pagina web sin ningun problema guardar datos en la base de datos y eso seria todo lo que necesitan saber.
+
+FIN
+
+
+
