@@ -53,7 +53,7 @@ echo <<<_END
         <br>
         <div>
             <label></label>
-            <input class="btn btn-success" type='submit' value='Registrarse como invitado'>
+            <input class="button is-link is-light" type='submit' value='Registrarse como invitado'>
         </div>
       </form>
       <br>

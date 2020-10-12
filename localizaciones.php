@@ -7,19 +7,15 @@ echo <<<_END
         <h2 class="titulos">Localizaciones</h2>
         <br>
         <br>
-        <div class="row justify-content-sm-center">
-        <div class="col-sm-12">
-          <div class="car">
-          <div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel">
-          <div class="carousel-inner">
-            <div class="carousel-item active">
-                <img src="../img/buscar.jpg" class="imginfe" alt="...">
+          <div class="level">
+            <div>
+                <img src="img/buscar.jpg" class="imginfe" alt="...">
             </div>
-            <div class="carousel-item">
-              <img src="../img/buscar2.jpg" class="imginfe" alt="...">
+            <div>
+              <img src="img/buscar2.jpg" class="imginfe" alt="...">
             </div>
-            <div class="carousel-item">
-              <img src="../img/buscar3.jpg" class="imginfe" alt="...">
+            <div>
+              <img src="img/buscar3.jpg" class="imginfe" alt="...">
             </div>
           </div>
         </div>
@@ -30,11 +26,12 @@ echo <<<_END
         </div>
       </div>
 
+      <br>
       <div class="row justify-content-sm-center">
       <div class="col-sm-5">
         <div class="card">
-        <h3 class="card-header">Como se realiza el servicio</h3>
-          <div class="card-body">
+        <h3>Como se realiza el servicio</h3>
+          <div>
           <p>-Se siguen las pistas sobre lo que se desea localizar</p>
           <p class="pcol">-Una busqueda exhaustiva de datos relacionados y paraderos</p>
           <p>-Se revisand datos de posibles fuentes confiables sobre la localizacion</p>
@@ -42,10 +39,11 @@ echo <<<_END
           </div>
         </div>
       </div>
-      <div class="col-sm-5">
+      <br>
+      <div>
         <div class="card">
-        <h3 class="card-header">Datos que se le entregaran</h3>
-          <div class="card-body">
+        <h3>Datos que se le entregaran</h3>
+          <div>
           <p>-Datos de suma importancio sobre la localizacion</p>
           <p class="pcol">-Informacion relevante que sea de utilidad para buscar</p>
           <p>-Recopilacion de pruebas</p>
@@ -57,16 +55,11 @@ echo <<<_END
     </div>
     <br>
 
-    <div class="row justify-content-sm-center">
-    <div class="col-sm-3">
-    <div class="card">
+    <br>
     <div class="card-body">
-      <h5 class="card-title">Contratar Ahora!!!</h5>
-      <a href="pagar.php" class="btn btn-warning">Contratar</a>
+      <h5 class="card-title">Contratar Ahora!!!</h5><br>
+      <a href="pagar.php" class="button is-link">Contratar</a>
     </div>
-  </div>
-  </div>
-  </div>
       
     <br>
     <br>

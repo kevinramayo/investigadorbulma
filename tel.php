@@ -7,19 +7,15 @@ echo <<<_END
         <h2 class="titulos">Investigaciones Telefonicas, celulares</h2>
         <br>
         <br>
-        <div class="row justify-content-sm-center">
-        <div class="col-sm-12">
-          <div class="car">
-          <div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel">
-          <div class="carousel-inner">
-            <div class="carousel-item active">
-                <img src="../img/celular.jpg" class="imginfe" alt="...">
+          <div class="level">
+            <div>
+                <img src="img/celular.jpg" class="imginfe" alt="...">
             </div>
-            <div class="carousel-item">
-              <img src="../img/celular2.jpg" class="imginfe" alt="...">
+            <div>
+              <img src="img/celular2.jpg" class="imginfe" alt="...">
             </div>
-            <div class="carousel-item">
-              <img src="../img/celular3.jpg" class="imginfe" alt="...">
+            <div>
+              <img src="img/celular3.jpg" class="imginfe" alt="...">
             </div>
           </div>
         </div>
@@ -27,13 +23,12 @@ echo <<<_END
               <h2 class="card-title">Informacion sobre el servicio</h2>
             </div>
           </div>
-        </div>
-      </div>
 
-      <div class="row justify-content-sm-center">
-      <div class="col-sm-5">
+      <br>
+      <div>
+      <div>
         <div class="card">
-        <h3 class="card-header">Como se realiza el servicio</h3>
+        <h3>Como se realiza el servicio</h3>
           <div class="card-body">
           <p>-Se necesitara una forma de poder contactar el dispositivo</p>
           <p class="pcol">-Nos tendra que proporcionar los datos necesario para proceder</p>
@@ -42,9 +37,10 @@ echo <<<_END
           </div>
         </div>
       </div>
-      <div class="col-sm-5">
+      <br>
+      <div>
         <div class="card">
-        <h3 class="card-header">Datos que se le entregaran</h3>
+        <h3>Datos que se le entregaran</h3>
           <div class="card-body">
           <p>-Informacion sobre chat y apps</p>
           <p class="pcol">-Fotos, videos entre otros archivos multimedia</p>
@@ -56,16 +52,11 @@ echo <<<_END
     </div>
     <br>
 
-    <div class="row justify-content-sm-center">
-    <div class="col-sm-3">
-    <div class="card">
+    <br>
     <div class="card-body">
-      <h5 class="card-title">Contratar Ahora!!!</h5>
-      <a href="pagar.php" class="btn btn-warning">Contratar</a>
+      <h5 class="card-title">Contratar Ahora!!!</h5><br>
+      <a href="pagar.php" class="button is-link">Contratar</a>
     </div>
-  </div>
-  </div>
-  </div>
       
     <br>
     <br>

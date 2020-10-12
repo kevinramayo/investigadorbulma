@@ -80,7 +80,7 @@ echo <<<_END
         </div>
         <br>
         <label></label>
-        <input class="btn btn-success" type='submit' value='Actualizar Direccion'>
+        <input class="button is-success is-light" type='submit' value='Actualizar Direccion'>
       </div>
       </form>
         <br>

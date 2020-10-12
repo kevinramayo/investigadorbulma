@@ -56,8 +56,8 @@ echo <<<_END
 	<br>
 	<div>
 	   <label></label>
-	   <input class="btn btn-success" type='submit' value='Registrarse'>
-	   <a class="btn btn-warning" href='invitado.php#1'>No deseo registrarme</a>
+	   <input class="button is-primary is-light" type='submit' value='Registrarse'>
+	   <a class="button is-danger is-light" href='invitado.php#1'>No deseo registrarme</a>
 	</div>
 	<br>
    </div>

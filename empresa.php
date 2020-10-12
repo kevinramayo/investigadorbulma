@@ -7,19 +7,17 @@ echo <<<_END
         <h2 class="titulos">Investigaciones Empresariales</h2>
         <br>
         <br>
-        <div class="row justify-content-sm-center">
-        <div class="col-sm-12">
           <div class="car">
-          <div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel">
-          <div class="carousel-inner">
-            <div class="carousel-item active">
-                <img src="../img/empresa.jpg" class="imginfe" alt="...">
+          <div>
+          <div class='level'>
+            <div>
+                <img src="img/empresa.jpg" class="imginfe" alt="...">
             </div>
-            <div class="carousel-item">
-              <img src="../img/empresa2.jpg" class="imginfe" alt="...">
+            <div>
+              <img src="img/empresa2.jpg" class="imginfe" alt="...">
             </div>
-            <div class="carousel-item">
-              <img src="../img/empresa3.jpg" class="imginfe" alt="...">
+            <div>
+              <img src="img/empresa3.jpg" class="imginfe" alt="...">
             </div>
           </div>
         </div>
@@ -27,13 +25,12 @@ echo <<<_END
               <h2 class="card-title">Informacion sobre el servicio</h2>
             </div>
           </div>
-        </div>
-      </div>
 
-      <div class="row justify-content-sm-center">
+      <br>
+      <div class="card">
       <div class="col-sm-5">
         <div class="card">
-        <h3 class="card-header">Como se realiza el servicio</h3>
+        <h3>Como se realiza el servicio</h3>
           <div class="card-body">
           <p>-Se analiza la institucion/empresa a fondo para obtener los datos pedidos</p>
           <p class="pcol">-Se hace una depuracion de datos para obtener los mas interesantes para sus fines</p>
@@ -42,9 +39,10 @@ echo <<<_END
           </div>
         </div>
       </div>
+      <br>
       <div class="col-sm-5">
         <div class="card">
-        <h3 class="card-header">Datos que se le entregaran</h3>
+        <h3>Datos que se le entregaran</h3>
           <div class="card-body">
           <p>-La informacion relevante que usted no pida precisamente</p>
           <p class="pcol">-Datos y grafias de los bienes de la empresa por parte nuestra</p>
@@ -56,16 +54,10 @@ echo <<<_END
     </div>
     <br>
 
-    <div class="row justify-content-sm-center">
-    <div class="col-sm-3">
-    <div class="card">
-    <div class="card-body">
-      <h5 class="card-title">Contratar Ahora!!!</h5>
-      <a href="pagar.php" class="btn btn-warning">Contratar</a>
+    <div>
+      <h5 class="card-title">Contratar Ahora!!!</h5><br>
+      <a href="pagar.php" class="button is-link">Contratar</a>
     </div>
-  </div>
-  </div>
-  </div>
       
     <br>
     <br>

@@ -49,8 +49,8 @@ echo <<<_END
         <br>
         <div>
             <label></label>
-            <input class="btn btn-success" type='submit' value='login'>
-            <a class="btn btn-warning" href='invitado.php#1'>Iniciar como Invitado</a>
+            <input class="button is-primary is-light" type='submit' value='login'>
+            <a class="button is-warning is-light" href='invitado.php#1'>Iniciar como Invitado</a>
         </div>
       </form>
     </div>

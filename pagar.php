@@ -18,7 +18,7 @@
       {
         queryMysql("INSERT INTO informacion (user,servicio,nombre,apellido,correo,contacto,pago) VALUES('$user','$servicio', '$nombre', '$apellido', '$correo', '$contacto', '$pago')");
           die('<h4>Datos Enviados</h4>Nos comunicaremos con usted para ajustar detalles.<h6>Gracias por confiar en Detectives privadosMX</h6>
-          <img src="../img/ok.gif" class="gif"></div></body></html>');
+          <img src="img/ok.gif" class="gif"></div></body></html>');
       }
     } 
 
@@ -30,39 +30,37 @@ echo <<<_END
         </div>
         <br>
         <div class="pago">
-        <div class="form-row">
-          <div class="col-sm-5">
+        <div class='level'>
+          <div class="control">
             <label>Nombre de Usuario</label>
-            <input type="text" class="form-control" placeholder="cambiar por un lista" maxlength='16' name='user' value="$user" readonly="readonly">
+            <input type="text" class="input is-success" placeholder="cambiar por un lista" maxlength='16' name='user' value="$user" readonly="readonly">
           </div>
           <div class="col-sm-4">
             <label for="inputState">servicio</label>
-            <input type="text" class="form-control" maxlength='18' name='servicio' value="$servicio">
+            <input type="text" class="input is-success" maxlength='18' name='servicio' value="$servicio">
           </div>
         </div>
         <br>
-        <div class="row justify-content-sm-center">
-          <div class="col-sm-5">
+        <div class="level">
+          <div>
             <label>Nombre/s</label>
-            <input type="text" class="form-control" placeholder="Nombre" maxlength='40' name='nombre' value="$nombre">
+            <input type="text" class="input is-success" placeholder="Nombre" maxlength='40' name='nombre' value="$nombre">
           </div>
-          <div class="col-sm-5">
+          <div>
             <label>Apellidos</label>
-            <input type="text" class="form-control" placeholder="Apellido" maxlength='40' name='apellido' value="$apellido">
+            <input type="text" class="input is-success" placeholder="Apellido" maxlength='40' name='apellido' value="$apellido">
           </div>
         </div>
         <br>
-        <div class="nocentro">
+        <div class="level">
           <div class="col-sm-8">
             <label>Correo Electronico</label>
-            <input type="text" class="form-control" placeholder="ejemplo@gmail.com" maxlength='40' name='correo' value="$correo">
+            <input type="text" class="input is-success" placeholder="ejemplo@gmail.com" maxlength='40' name='correo' value="$correo">
           </div>
-        </div>
-        <br>
-        <div class="nocentro">
+        
           <div class="col-sm-6">
             <label>Numero De Contacto</label>
-            <input type="text" class="form-control" placeholder="Numero de telefono/celular" maxlength='10' name='contacto' value="$contacto">
+            <input type="text" class="input is-success" placeholder="Numero de telefono/celular" maxlength='10' name='contacto' value="$contacto">
           </div>
         </div>
         <br>
@@ -76,23 +74,23 @@ echo <<<_END
         <div class="nocentro">
           <div class="col-sm-3">
             <label>Metodos de pago</label>
-            <img src="../img/metodos.png" class="metodosdepago">
+            <img src="img/metodos.png" class="metodosdepago">
           </div>
         </div>
         <label class="nocentro">Fecha de expiracion</label>
         <form>
-        <div class="form-row">
+        <div class="level">
           <div class="col-4">
-            <input type="text" class="form-control" placeholder="Numero de tarjeta" maxlength='16' name='pago' value="$pago">
+            <input type="text" class="input is-success" placeholder="Numero de tarjeta" maxlength='16' name='pago' value="$pago">
           </div>
           <div class="col-2">
-            <input type="text" class="form-control" placeholder="Mes">
+            <input type="text" class="input is-success" placeholder="Mes">
           </div>
           <div class="col-2">
-            <input type="text" class="form-control" placeholder="Dia">
+            <input type="text" class="input is-success" placeholder="Dia">
           </div>
           <div class="col-2">
-            <input type="text" class="form-control" placeholder="CVV/CVC">
+            <input type="text" class="input is-success" placeholder="CVV/CVC">
           </div>
         </div>
         </form>
@@ -102,7 +100,7 @@ echo <<<_END
           <label class="form-check-label" for="exampleCheck1">Estoy deacuerdo con los <a href="#">Terminos y condiciones</a></label>
         </div>
         <label></label>
-        <input class="btn btn-success" type='submit' value='Realizar Pedido'>
+        <input class="button is-success is-light" type='submit' value='Realizar Pedido'>
         </div>
       </form>
         <br>

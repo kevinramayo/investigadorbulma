@@ -29,37 +29,30 @@ echo <<<_MAIN
       <div>
          <div>
             <div id= 'logo' class='center'>Investigador Privado
-            <img src="../img/lupa.png" class="imglogo"></div>
+            <img src="img/lupa.png" class="imglogo"></div>
 
-            <div class="row justify-content-sm-center">
-            <div class="col-sm-3">
-              <div class="cards">
-              <img src="../img/feis.png" class="contactos" alt="...">
+            <div class="level">
+            <div class="level-item has-text-centered">
+              <div class="card">
+              <img src="img/feis.png" class="contactos" alt="...">
                 <div class="card-body">
                   <h6 class="titulos">Investigadores Privados MX</h6>
                   <p class="titulos">Pagina de Facebook</p>
-                  <button class="button">Button</button>
-                  <div class="notification is-primary">
-                  <button class="delete"></button>
-                  Primar lorem ipsum dolor sit amet, consectetur
-  adipiscing elit lorem ipsum dolor. <strong>Pellentesque risus mi</strong>, tempus quis placerat ut, porta nec nulla. Vestibulum rhoncus ac ex sit amet fringilla. Nullam gravida purus diam, et dictum <a>felis venenatis</a> efficitur. Sit amet,
-  consectetur adipiscing elit
-</div>
                 </div>
               </div>
             </div>
-            <div class="col-sm-2">
-              <div class="cards">
-              <img src="../img/insta.png" class="contactos" alt="...">
+            <div class="level-item has-text-centered">
+              <div class="card">
+              <img src="img/insta.png" class="contactos" alt="...">
                 <div class="card-body">
                   <h6 class="titulos">InvestigadoresMXK</h6>
                   <p class="titulos">Siguenos en instagram</p>
                 </div>
               </div>
             </div>
-            <div class="col-sm-3">
-              <div class="cards">
-              <img src="../img/twiter.jpg" class="contactos" alt="...">
+            <div class="level-item has-text-centered">
+              <div class="card">
+              <img src="img/twiter.jpg" class="contactos" alt="...">
                 <div class="card-body">
                   <h6 class="titulos">InvestigadoresMXOficial</h6>
                   <p class="titulos">Siguenos en Twitter</p>
@@ -73,70 +66,92 @@ echo <<<_MAIN
 _MAIN;
    if ($loggedin){
 echo <<<_LOGGEDIN
-         <div class='center'>
-         <nav class="navbar navbar-light bg-light">
-         <a class="navbar-brand" href="home.php">
-         InvestigadoresPrivadosMX
-           <img src="../img/lupa.png" width="30" height="30" class="d-inline-block align-top" alt="">
-         </a>
-         <ul class="nav justify-content-end">
-         <li class="nav-item">
-           <a class="btn btn-outline-primary" href="home.php">Home</a>
-         </li>
-         <li class="nav-item dropdown">
-         <a class="btn btn-outline-primary" data-toggle="dropdown" href="" role="button" aria-haspopup="true" aria-expanded="false">Servicios</a>
-         <div class="dropdown-menu">
-           <a class="dropdown-item" href="infidelidad.php">Infidelidades</a>
-           <a class="dropdown-item" href="empresa.php">Empresariales</a>
-           <a class="dropdown-item" href="localizaciones.php">Localizaciones</a>
-           <a class="dropdown-item" href="tel.php">Inv. Telefonicas</a>
-         </div>
-         <li class="nav-item">
-           <a class="btn btn-outline-primary" href="direccion.php">Actualizar Direccion</a>
-         </li>
-       </li>
-         <li class="nav-item">
-           <a class="btn btn-outline-primary" href="logout.php">Log Out</a>
-         </li>
-       </ul>
-         </div> 
-         </nav>
+
+         <nav class="navbar" role="navigation" aria-label="main navigation">
+  <div class="navbar-brand">
+    <a class="navbar-item" href="home.php">
+    <p>Investigadores privados</p>
+      <img src="img/lupa.png" width="40" height="40">
+    </a>
+
+    <a role="button" class="navbar-burger burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
+      <span aria-hidden="true"></span>
+      <span aria-hidden="true"></span>
+      <span aria-hidden="true"></span>
+    </a>
+  </div>
+
+  <div id="navbarBasicExample" class="navbar-menu">
+    <div class="navbar-start">
+      <a class="navbar-item" href='home.php'><button class="button is-primary is-light">
+        Home
+        </button></a>
+
+      <a class="navbar-item" href='direccion.php'><button class="button is-primary is-light">
+        Actualizar direccion
+        </button></a>
+
+      <div class="navbar-item has-dropdown is-hoverable">
+        <a class="navbar-link">
+          Servicios
+        </a>
+
+        <div class="navbar-dropdown">
+          <a class="navbar-item" href='infidelidad.php'>
+            Infidelidades
+          </a>
+          <a class="navbar-item" href='empresa.php'>
+            Empresariales
+          </a>
+          <a class="navbar-item" href='tel.php'>
+            Telefonicas
+          </a>
+          <a class="navbar-item" href='localizaciones.php'>
+            Localizaciones
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <div class="navbar-end">
+      <div class="navbar-item">
+        <div class="buttons">
+          <a class="button is-danger is-light" href='logout.php'>
+            Log out
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</nav>
+
 _LOGGEDIN;
    }
       else {
 echo <<<_GUEST
          <div class='center'>
-            <a class="btn btn-outline-primary" href='/invprimon'>Regresar al CV</a>
-            <a class="btn btn-outline-primary" href='index.php'>Home</a>
-            <a class="btn btn-outline-primary" href='signup.php#registro'>Registrarse</a>
-            <a class="btn btn-outline-primary" href='login.php#ini'>Iniciar seción</a>     
+            <a class="button is-warning is-light" href='https://kevinramayo.github.io/'>Regresar al CV</a>
+            <a class="button is-warning is-light" href='index.php'>Home</a>
+            <a class="button is-warning is-light" href='signup.php#registro'>Registrarse</a>
+            <a class="button is-warning is-light" href='login.php#ini'>Iniciar seción</a>     
          </div>
          <br>
 
-         <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
-         <div class="carousel-inner">
-           <div id= "centro" class="carousel-item active">
-             <img src="../img/invepng.png" class="tamaño" alt="...">
+
+         <div class="card">
+           <div id="centro">
+             <img src="img/invepng.png" class="tamaño" alt="...">
            </div>
-           <div id= "centro" class="carousel-item">
-             <img src="../img/carrusel-2.png" class="tamaño" alt="...">
+           <div id= "centro">
+             <img src="img/carrusel-2.png" class="tamaño" alt="...">
            </div>
-           <div id= "centro" class="carousel-item">
-             <img src="../img/carrusel-3.png" class="tamaño" alt="...">
+           <div id= "centro">
+             <img src="img/carrusel-3.png" class="tamaño" alt="...">
            </div>
-           <div id= "centro" class="carousel-item">
-             <a href='signup.php'><img src="../img/carrusel-4.png" class="tamaño" alt="..."></a>
+           <div id="centro">
+             <a href='signup.php'><img src="img/carrusel-4.png" class="tamaño" alt="..."></a>
            </div>
          </div>
-         <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
-           <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-           <span class="sr-only">Previous</span>
-         </a>
-         <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
-           <span class="carousel-control-next-icon" aria-hidden="true"></span>
-           <span class="sr-only">Next</span>
-         </a>
-       </div>
 
          <strong><p class='info'>(Registrese con sus datos o puede registrarse como "Invitado")</p></strong>
 _GUEST;

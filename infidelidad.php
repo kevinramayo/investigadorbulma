@@ -7,19 +7,19 @@ echo <<<_END
         <h2 class="titulos">Especializados en investigaciones sobre infidelidad</h2>
         <br>
         <br>
-        <div class="row justify-content-sm-center">
+        <div>
         <div class="col-sm-12">
           <div class="car">
-          <div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel">
-          <div class="carousel-inner">
-            <div class="carousel-item active">
-                <img src="../img/infe.jpg" class="imginfe" alt="...">
+          <div>
+          <div class='level'>
+            <div class="level-item has-text-centered">
+                <img src="img/infe.jpg" class="imginfe" alt="...">
             </div>
-            <div class="carousel-item">
-              <img src="../img/infe2.jpg" class="imginfe" alt="...">
+            <div class="level-item has-text-centered">
+              <img src="img/infe2.jpg" class="imginfe" alt="...">
             </div>
-            <div class="carousel-item">
-              <img src="../img/infe3.jpg" class="imginfe" alt="...">
+            <div class="level-item has-text-centered">
+              <img src="img/infe3.jpg" class="imginfe" alt="...">
             </div>
           </div>
         </div>
@@ -30,11 +30,12 @@ echo <<<_END
         </div>
       </div>
 
-      <div class="row justify-content-sm-center">
-      <div class="col-sm-5">
+      <br>
+      <div class='card'>
+      <div>
         <div class="card">
-        <h3 class="card-header">Como se realiza el servicio</h3>
-          <div class="card-body">
+        <h3 class="subtitle">Como se realiza el servicio</h3>
+          <div>
           <p>-Con base a la informacion que usted nos proporcione podremos dar un seguimientos del individuo para recolectar informacion</p>
           <p class="pcol">-Usted puede decidir que tipo de informcion se filtrara para conseguirle la que mas se ajuste a sus necesidades</p>
           <p>-se hara un seguimiento exhaustivo para la obtencion detallada de cada dato requerido</p>
@@ -42,10 +43,11 @@ echo <<<_END
           </div>
         </div>
       </div>
-      <div class="col-sm-5">
+      <br>
+      <div>
         <div class="card">
-        <h3 class="card-header">Datos que se le entregaran</h3>
-          <div class="card-body">
+        <h3 class="subtitle">Datos que se le entregaran</h3>
+          <div>
           <p>-Informacion relacionada con el individuo unicamente para su adquisicion personal</p>
           <p class="pcol">-Fuentes de la optencion de la informacion</p>
           <p>-Historial relacionada a los sospechosos relacionados al individuo</p>
@@ -56,16 +58,14 @@ echo <<<_END
     </div>
     <br>
 
-    <div class="row justify-content-sm-center">
-    <div class="col-sm-3">
-    <div class="card">
-    <div class="card-body">
-      <h5 class="card-title">Contratar Ahora!!!</h5>
-      <a href="pagar.php" class="btn btn-warning">Contratar</a>
+
+    <div>
+    <div
+      <h5 class="card-title">Contratar Ahora!!!</h5><br>
+      <a href="pagar.php" class="button is-link"">Contratar</a>
     </div>
   </div>
-  </div>
-  </div>
+
       
     <br>
     <br>
